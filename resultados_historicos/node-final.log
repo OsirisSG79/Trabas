@@ -1,0 +1,93 @@
+OK: V6 mantiene una sola caja exacta, cuatro variantes visibles y ningún bloqueo textual obligatorio.
+✔ pruebas/test_alcance_correccion.cjs (253.090102ms)
+OK: selección múltiple, cuatro esquinas y panel condicional debajo del visor.
+OK: ajuste conserva el texto original, división en dos borradores y bloqueo de guardado sin confirmación.
+OK: recorte visible, giro, dimensiones rotadas y copia de lectura conservando puntos.
+✔ pruebas/test_editor_zonas.cjs (145.244296ms)
+OK: aceptación provisional separada de corrección humana confirmada.
+✔ pruebas/test_estado_texto.cjs (112.876861ms)
+OK: filtro, límites, navegación, borradores, bloqueo durante guardado, avance tras verificar, última imagen e historial plegado.
+OK: V6 corrige y sobrescribe una caja exacta aunque su región de origen esté marcada como dudosa.
+✔ pruebas/test_navegacion_imagenes.cjs (172.021852ms)
+OK: clic en lectura abre, desplaza y enfoca el formulario de corrección.
+✔ pruebas/test_redireccion_correccion.cjs (247.117485ms)
+OK: V10 mantiene las cuatro bases, aplica ajuste fino y propone Texto correcto sin guardar automáticamente.
+✔ pruebas/test_texto_rotacion.cjs (188.924247ms)
+OK: filtros sin texto, ajuste fino explícito, texto no necesario y notificaciones plegables presentes.
+✔ pruebas/test_v11_filtros_notificaciones.cjs (153.348622ms)
+OK: V14.11 permite mover, inclinar y rectificar recortes manuales.
+✔ pruebas/test_v14_11_recorte_inclinado.cjs (170.795676ms)
+OK: uniones visuales entrenables por defecto con control explícito.
+✔ pruebas/test_v14_12_frontend_union_entrenable.cjs (117.070236ms)
+OK: V14.13 habilita geometría flexible y aprendizaje confirmado.
+✔ pruebas/test_v14_13_frontend_geometria.cjs (97.163171ms)
+OK: V14.14 traduce controles dinámicos y conserva desglose/unión por clic.
+✔ pruebas/test_v14_14_i18n_supervision.cjs (97.424273ms)
+V14.15.1: i18n restante del listado OK
+✔ pruebas/test_v14_15_1_i18n_restante.cjs (99.059253ms)
+V14.15: editor de bloque unificado e i18n dinámico OK
+✔ pruebas/test_v14_15_editor_bloque_i18n.cjs (101.365615ms)
+OK: V14.4 aplica y permite restaurar el giro automático por congruencia.
+✔ pruebas/test_v14_4_frontend_orientacion.cjs (152.030013ms)
+OK: V14.5 limpia estados transitorios, protege borradores reales y añade cierre consistente.
+✔ pruebas/test_v14_5_cierre_verificacion.cjs (106.727192ms)
+OK: V14.6 añade filtros semánticos y limita el ajuste fino adaptativo.
+✔ pruebas/test_v14_6_filtros_frontend.cjs (120.373707ms)
+OK: V14.7 expone tipo esperado, umbral, copia automática y relectura manual exacta.
+✔ pruebas/test_v14_7_control_manual.cjs (122.559948ms)
+V14.8 frontend strategy learning OK
+✔ pruebas/test_v14_8_frontend_estrategia.cjs (102.689406ms)
+V14.9 frontend autoaprendizaje OK
+✔ pruebas/test_v14_9_frontend_autoaprendizaje.cjs (121.800815ms)
+✔ La aceptación provisional no se presenta como corrección humana (1.134266ms)
+✔ Una corrección guardada prevalece y conserva el estado humano (0.183105ms)
+✔ La reanudación vuelve a mostrar el estado provisional y no usa un check verde (0.364268ms)
+✔ Los estados provisionales tienen apariencia y textos ES/EN/DE diferenciados (0.295455ms)
+✔ La matriz expone decisión, razón, fuente y tiempo crudo en su tooltip accesible (0.395445ms)
+✔ El panel conserva raw/rechazo y bloquea eventos censurados como tiempos finales (2.030736ms)
+OK: zoom suave, limites y geometria estable.
+✔ pruebas/test_v15_10_1_r10_zoom_confort.cjs (110.962074ms)
+OK R12 frontend: pendiente azul + decisión explicable
+✔ pruebas/test_v15_10_1_r12_frontend.cjs (84.524481ms)
+OK: fallback de imágenes y caché R3–R19 cableados.
+✔ pruebas/test_v15_10_1_r3_frontend_imagenes.cjs (116.581321ms)
+OK: frontend R7+ sin shadow de t() y con semáforo de apertura coherente.
+✔ pruebas/test_v15_10_1_r7_frontend.cjs (167.667745ms)
+OK: R9 distingue color estimado de publicación confirmada.
+✔ pruebas/test_v15_10_1_r9_frontend.cjs (97.72103ms)
+V15.8: límites explícitos y máximo visible presentes, con traducciones EN/DE.
+✔ pruebas/test_v15_8_guia_ui.cjs (114.516674ms)
+✔ C7: diálogo previo con bloque de proyecto obligatorio (1.292916ms)
+✔ C7: no se procesa sin decisión explícita de proyecto (0.275455ms)
+✔ C7: proyectos cargados desde la API, nunca del localStorage (0.215074ms)
+✔ C7: estilos e i18n ES/EN/DE del bloque de proyecto (0.616247ms)
+✔ N6: tarjeta exportadora distingue bloqueados de generados (1.105093ms)
+✔ N6: Excel parcial del pipeline expone borradores por separado (0.291408ms)
+✔ N6: mensajes de exportación bloqueada traducidos ES/EN/DE (0.292931ms)
+✔ N9: la tarjeta exportadora muestra el estado PENDIENTE diferenciado (1.056199ms)
+✔ N9: textos del estado pendiente traducidos ES/EN/DE (0.268644ms)
+✔ diálogo de rangos se abre ANTES de procesar y valida límites (1.424103ms)
+✔ zoom del video: suave con rueda, presets, doble clic, fullscreen y lupa F±2 (7.248147ms)
+✔ matriz dinámica: sólo casos reales, sin vacantes artificiales (0.324308ms)
+✔ i18n del diálogo de rangos en inglés y alemán (0.401505ms)
+✔ V15.9.1 (A1): flujo real de reversión de ROI con historial (1.31557ms)
+✔ V15.9.1 (A2): pan por arrastre y pantalla completa con controles (1.187888ms)
+✔ V15.9.1 (A3): el diálogo de rangos usa el sistema de idiomas (1.30934ms)
+✔ V15.10.1 R12+: caché de estáticos sincronizada a la versión vigente (1.53499ms)
+✔ V15.9.1 (A7): predeterminados nunca guardan preferencia global (0.356105ms)
+✔ V15.9.1 (B3): el backend expone causa en sin_clasificar (3.666467ms)
+✔ V15.9.1 (B1/B2): consenso sólo publica confirmado (1.177582ms)
+V15 frontend video: OK
+✔ pruebas/test_v15_frontend_video.cjs (107.333755ms)
+V15 video UI OK
+✔ pruebas/test_v15_video_ui.cjs (101.594098ms)
+OK: V9 evita saltos por respuestas tardías y no marca como sucio un texto ya persistido.
+✔ pruebas/test_v9_frontend.cjs (117.021799ms)
+ℹ tests 54
+ℹ suites 0
+ℹ pass 54
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 625.765246

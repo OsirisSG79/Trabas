@@ -1,0 +1,510 @@
+........................................................................ [  5%]
+........................................................................ [ 11%]
+........................................................................ [ 17%]
+.................................FF..FFFF..FF........................... [ 23%]
+...................................................................s...F [ 29%]
+..FF.....................................sFF............................ [ 35%]
+........................................................................ [ 40%]
+........................................................................ [ 46%]
+..................................F................F.................... [ 52%]
+..........sssssssssssssssssssssssssssssssssssssssssssssss............... [ 58%]
+................sssss...........................F....................... [ 64%]
+...................F....................F...............F.....FFF.....F. [ 70%]
+..........................................FFFFFFFFFFF.FFFFF.....F....... [ 76%]
+...FF.FFFFF.........F................................FFFF............... [ 81%]
+...........F............................................................ [ 87%]
+........................................................................ [ 93%]
+....FFFFFFFFF................F..FF......F..F.......F.................... [ 99%]
+.......                                                                  [100%]
+=================================== FAILURES ===================================
+___________________ test_fisura_oscura_precede_a_tela_clara ____________________
+pruebas/test_ruptura_real.py:93: in test_fisura_oscura_precede_a_tela_clara
+    assert resultado["frame_evento"] == 6
+E   assert 13 == 6
+____________ test_hinchado_suave_y_brillo_creciente_no_son_ruptura _____________
+pruebas/test_ruptura_real.py:105: in test_hinchado_suave_y_brillo_creciente_no_son_ruptura
+    assert resultado["estado"] == "sin_evento"
+E   AssertionError: assert 'candidato' == 'sin_evento'
+E     
+E     - sin_evento
+E     + candidato
+______________ test_ruido_puntual_cercano_no_adelanta_fisura_real ______________
+pruebas/test_ruptura_real.py:123: in test_ruido_puntual_cercano_no_adelanta_fisura_real
+    assert resultado["frame_evento"] == 6
+E   assert 5 == 6
+____________ test_indicio_separado_por_cuadro_limpio_no_se_fusiona _____________
+pruebas/test_ruptura_real.py:130: in test_indicio_separado_por_cuadro_limpio_no_se_fusiona
+    assert resultado["frame_evento"] == 7
+E   assert 12 == 7
+________ test_primer_pixel_persistente_mas_de_siete_frames_se_conserva _________
+pruebas/test_ruptura_real.py:139: in test_primer_pixel_persistente_mas_de_siete_frames_se_conserva
+    assert resultado["frame_evento"] == 6
+E   assert 23 == 6
+_________ test_pixel_10_crece_30_sin_arrastrar_pixel_caliente_anterior _________
+pruebas/test_ruptura_real.py:152: in test_pixel_10_crece_30_sin_arrastrar_pixel_caliente_anterior
+    assert resultado["frame_evento"] == 10
+E   assert 35 == 10
+__________ test_dos_camaras_automaticas_no_borran_revision_pendiente ___________
+pruebas/test_ruptura_real.py:185: in test_dos_camaras_automaticas_no_borran_revision_pendiente
+    assert consenso["estado"] == "primera_aparicion"
+E   AssertionError: assert 'sin_consenso' == 'primera_aparicion'
+E     
+E     - primera_aparicion
+E     + sin_consenso
+__________ test_confirmacion_humana_prevalece_sobre_flags_automaticos __________
+pruebas/test_ruptura_real.py:203: in test_confirmacion_humana_prevalece_sobre_flags_automaticos
+    assert consenso["estado"] == "confirmado_manual"
+E   AssertionError: assert 'sin_consenso' == 'confirmado_manual'
+E     
+E     - confirmado_manual
+E     + sin_consenso
+________________ test_modificador_matriz_no_encubre_diferencias ________________
+pruebas/test_v1510_piloto.py:188: in test_modificador_matriz_no_encubre_diferencias
+    from APLICAR_PARCHE_V15_10 import modificar_matriz
+E   ModuleNotFoundError: No module named 'APLICAR_PARCHE_V15_10'
+_________________ test_benchmark_portable_windows_sin_resource _________________
+pruebas/test_v1510_piloto.py:209: in test_benchmark_portable_windows_sin_resource
+    from APLICAR_PARCHE_V15_10 import modificar_benchmark
+E   ModuleNotFoundError: No module named 'APLICAR_PARCHE_V15_10'
+___________ test_instalar_y_rollback_transaccional_en_repo_simulado ____________
+pruebas/test_v1510_piloto.py:218: in test_instalar_y_rollback_transaccional_en_repo_simulado
+    import APLICAR_PARCHE_V15_10 as i
+E   ModuleNotFoundError: No module named 'APLICAR_PARCHE_V15_10'
+_______________ test_backend_publica_salud_y_persistencia_segura _______________
+pruebas/test_v15_10_1_r14_auditoria_preventiva.py:81: in test_backend_publica_salud_y_persistencia_segura
+    assert f'PATCH_BUILD = "{build}"' in texto
+E   assert 'PATCH_BUILD = "16.0.20"' in '"""\napp.py — Backend FastAPI del dashboard (Fase 4).\n\nPropósito\n---------\nExpone localmente los datos que ya pro...t(f"Dashboard: http://127.0.0.1:{puerto}")\n    uvicorn.run(app, host="127.0.0.1", port=puerto, log_level="warning")\n'
+___________________________ test_frontend_cache_r14 ____________________________
+pruebas/test_v15_10_1_r14_auditoria_preventiva.py:90: in test_frontend_cache_r14
+    assert index.count(build) >= 5
+E   assert 0 >= 5
+E    +  where 0 = <built-in method count of str object at 0x6560b90>('16.0.20')
+E    +    where <built-in method count of str object at 0x6560b90> = '<!DOCTYPE html>\n<html lang="es">\n<head>\n  <!-- compat-estabilidad-v11: 20260921-v11-1 -->\n  <meta charset="UTF-8"...ript>\n  <script src="red_segura.js?v=16.0.5"></script>\n  <script src="app.js?v=16.0.5"></script>\n</body>\n</html>\n'.count
+________________ test_soak_identidad_por_defecto_version_aware _________________
+pruebas/test_v15_10_1_r158_endurecimiento.py:513: in test_soak_identidad_por_defecto_version_aware
+    assert soak_r157.PATCH_BUILD_R159 == build
+E   AssertionError: assert '16.0.2' == '16.0.20'
+E     
+E     - 16.0.20
+E     ?       -
+E     + 16.0.2
+_______________ test_soak_identidad_por_defecto_es_la_del_arbol ________________
+pruebas/test_v15_10_1_r159_endurecimiento.py:310: in test_soak_identidad_por_defecto_es_la_del_arbol
+    assert soak_r157.PATCH_BUILD_R159 == build
+E   AssertionError: assert '16.0.2' == '16.0.20'
+E     
+E     - 16.0.20
+E     ?       -
+E     + 16.0.2
+___ test_consenso_automatico_3_camaras_recupera_color_sin_relajar_conflictos ___
+pruebas/test_v15_10_1_r4_apertura_dependencias.py:131: in test_consenso_automatico_3_camaras_recupera_color_sin_relajar_conflictos
+    assert canon['apertura']['estado'] == 'AUTO_VERIFICABLE'
+E   AssertionError: assert 'PROPUESTA' == 'AUTO_VERIFICABLE'
+E     
+E     - AUTO_VERIFICABLE
+E     + PROPUESTA
+_____ VideoV156TiempoEstableTests.test_consenso_autorrepara_items_antiguos _____
+pruebas/test_v15_6_tiempo_video_estable.py:70: in test_consenso_autorrepara_items_antiguos
+    self.assertEqual(c["estado"], "primera_aparicion")
+E   AssertionError: 'sin_consenso' != 'primera_aparicion'
+E   - sin_consenso
+E   + primera_aparicion
+_______________ test_analisis_corrige_rec_mal_leido_con_el_reloj _______________
+pruebas/test_v15_7_1_identidad_cache_fps.py:184: in test_analisis_corrige_rec_mal_leido_con_el_reloj
+    assert r["fps"] == 5000.0 and r["fps_fuente"] == "reloj_overlay"
+E   assert (500.0 == 5000.0)
+_________ FpsRealTests.test_sin_rec_en_ningun_video_no_inventa_1375_ms _________
+pruebas/test_v15_7_bugs_prioritarios.py:58: in test_sin_rec_en_ningun_video_no_inventa_1375_ms
+    self.assertEqual(item["tiempo_ms"], 2.2)
+E   AssertionError: None != 2.2
+_ ConsensoPrimeraAparicionTests.test_deteccion_aislada_mas_temprana_pide_revision _
+pruebas/test_v15_7_bugs_prioritarios.py:145: in test_deteccion_aislada_mas_temprana_pide_revision
+    self.assertEqual(c["camara_anterior_sin_respaldo"]["camara"], "DETAIL")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: 'NoneType' object is not subscriptable
+______________ ConsensoPrimeraAparicionTests.test_nunca_negativo _______________
+pruebas/test_v15_7_bugs_prioritarios.py:168: in test_nunca_negativo
+    self.assertEqual(c["estado"], "sin_datos")
+E   AssertionError: 'sin_consenso' != 'sin_datos'
+E   - sin_consenso
+E   + sin_datos
+________ ConsensoPrimeraAparicionTests.test_scheibe_no_define_el_tiempo ________
+pruebas/test_v15_7_bugs_prioritarios.py:129: in test_scheibe_no_define_el_tiempo
+    self.assertEqual(c["estado"], "primera_aparicion")
+E   AssertionError: 'sin_consenso' != 'primera_aparicion'
+E   - sin_consenso
+E   + primera_aparicion
+_ DetectorAperturaV157Tests.test_discontinuidad_descarta_hinchado_incluso_sin_compensacion _
+pruebas/test_v15_7_detector_apertura.py:50: in test_discontinuidad_descarta_hinchado_incluso_sin_compensacion
+    self.assertEqual(r["frame_evento"], 14)
+E   AssertionError: 18 != 14
+_______________ test_b1_propuesta_no_confirmada_nunca_es_valida ________________
+pruebas/test_v15_9_1_consenso_publicacion.py:50: in test_b1_propuesta_no_confirmada_nunca_es_valida
+    assert res["estado"] == "primera_aparicion"
+E   AssertionError: assert 'sin_consenso' == 'primera_aparicion'
+E     
+E     - primera_aparicion
+E     + sin_consenso
+__________ test_b1_con_cuatro_camaras_el_mantenimiento_sigue_intacto ___________
+pruebas/test_v15_9_1_consenso_publicacion.py:63: in test_b1_con_cuatro_camaras_el_mantenimiento_sigue_intacto
+    assert res["estado_consenso"] == "discordancia"
+E   AssertionError: assert 'propuesto' == 'discordancia'
+E     
+E     - discordancia
+E     + propuesto
+_________________ test_b1_tres_coincidentes_limpio_si_publica __________________
+pruebas/test_v15_9_1_consenso_publicacion.py:71: in test_b1_tres_coincidentes_limpio_si_publica
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+___________________ test_b1_precedencia_manual_siempre_manda ___________________
+pruebas/test_v15_9_1_consenso_publicacion.py:82: in test_b1_precedencia_manual_siempre_manda
+    assert res["estado"] == "confirmado_manual"
+E   AssertionError: assert 'sin_consenso' == 'confirmado_manual'
+E     
+E     - confirmado_manual
+E     + sin_consenso
+_________________ test_b2_causa_grave_no_se_borra_al_confirmar _________________
+pruebas/test_v15_9_1_consenso_publicacion.py:95: in test_b2_causa_grave_no_se_borra_al_confirmar
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+__________________ test_b2_overlay_dudoso_bloquea_publicacion __________________
+pruebas/test_v15_9_1_consenso_publicacion.py:114: in test_b2_overlay_dudoso_bloquea_publicacion
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+____________ test_b2_error_de_lectura_del_reloj_bloquea_publicacion ____________
+pruebas/test_v15_9_1_consenso_publicacion.py:124: in test_b2_error_de_lectura_del_reloj_bloquea_publicacion
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+_______________ test_b2_ausencia_de_reloj_no_bloquea_por_si_sola _______________
+pruebas/test_v15_9_1_consenso_publicacion.py:135: in test_b2_ausencia_de_reloj_no_bloquea_por_si_sola
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+____________ test_b2_roi_incierta_autoalineada_bloquea_publicacion _____________
+pruebas/test_v15_9_1_consenso_publicacion.py:146: in test_b2_roi_incierta_autoalineada_bloquea_publicacion
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+______________________ test_b2_roi_confirmada_no_bloquea _______________________
+pruebas/test_v15_9_1_consenso_publicacion.py:158: in test_b2_roi_confirmada_no_bloquea
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+___________ test_b2_revision_manual_limpia_las_causas_de_esa_camara ____________
+pruebas/test_v15_9_1_consenso_publicacion.py:169: in test_b2_revision_manual_limpia_las_causas_de_esa_camara
+    assert res["estado"] == "confirmado_manual"
+E   AssertionError: assert 'sin_consenso' == 'confirmado_manual'
+E     
+E     - confirmado_manual
+E     + sin_consenso
+_______________ test_compatibilidad_con_datos_de_cache_antiguos ________________
+pruebas/test_v15_9_1_consenso_publicacion.py:214: in test_compatibilidad_con_datos_de_cache_antiguos
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+________________ test_e2e_propuesto_no_rellena_opening_time_ms _________________
+pruebas/test_v15_9_1_consenso_publicacion.py:240: in test_e2e_propuesto_no_rellena_opening_time_ms
+    assert pendiente == 5000.0
+E   assert 5000.1 == 5000.0
+___________________ test_e2e_confirmado_si_rellena_y_colorea ___________________
+pruebas/test_v15_9_1_consenso_publicacion.py:250: in test_e2e_confirmado_si_rellena_y_colorea
+    assert dato.get("estado") == "extraido_video"
+E   AssertionError: assert 'pendiente_revision' == 'extraido_video'
+E     
+E     - extraido_video
+E     + pendiente_revision
+___________ test_e2e_causa_grave_deja_el_tiempo_pendiente_en_la_fila ___________
+pruebas/test_v15_9_1_consenso_publicacion.py:267: in test_e2e_causa_grave_deja_el_tiempo_pendiente_en_la_fila
+    assert estado == "gris" and valor is None and pendiente == 5000.0
+E   AssertionError: assert ('gris' == 'gris'
+E     
+E       gris and None is None and 5000.1 == 5000.0)
+______________ test_e2e_sin_evento_previo_de_video_marca_faltante ______________
+pruebas/test_v15_9_1_consenso_publicacion.py:280: in test_e2e_sin_evento_previo_de_video_marca_faltante
+    assert dato.get("estado") == "faltante_requerido"
+E   AssertionError: assert 'pendiente_revision' == 'faltante_requerido'
+E     
+E     - faltante_requerido
+E     + pendiente_revision
+__________ test_e2e_propuesto_y_causa_grave_quedan_grises_en_el_excel __________
+pruebas/test_v15_9_1_paridad_matriz.py:237: in test_e2e_propuesto_y_causa_grave_quedan_grises_en_el_excel
+    assert rgb(celda_ok).endswith(rojo), \
+E   AssertionError: El consenso confirmado limpio sí se colorea (5000 ms > 7 ms → rojo)
+E   assert False
+E    +  where False = <built-in method endswith of str object at 0x7fe0792e3df0>('EF4444')
+E    +    where <built-in method endswith of str object at 0x7fe0792e3df0> = '009CA3AF'.endswith
+E    +      where '009CA3AF' = <function test_e2e_propuesto_y_causa_grave_quedan_grises_en_el_excel.<locals>.rgb at 0x7fe0939007c0>(<Cell 'Übersicht Standversuche'.D33>)
+____________ test_c1_migracion_reevalua_2_de_4_y_conserva_evidencia ____________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:137: in test_c1_migracion_reevalua_2_de_4_y_conserva_evidencia
+    assert float(campo["valor"]) == pytest.approx(12.0)
+E   assert 12.1 == 12.0 ± 1.2e-05
+E     
+E     comparison failed
+E     Obtained: 12.1
+E     Expected: 12.0 ± 1.2e-05
+_____________ test_c1_migracion_preserva_confirmacion_manual_real ______________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:163: in test_c1_migracion_preserva_confirmacion_manual_real
+    assert f["video_apertura"]["estado"] == "confirmado_manual"
+E   AssertionError: assert 'sin_consenso' == 'confirmado_manual'
+E     
+E     - confirmado_manual
+E     + sin_consenso
+_____________ test_c2_alerta_sin_clasificar_bloquea_el_consolidado _____________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:203: in test_c2_alerta_sin_clasificar_bloquea_el_consolidado
+    assert consenso["estado_consenso"] == "confirmado"  # el respaldo numérico existe
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+_____________ test_c2_alerta_sin_clasificar_deja_la_fila_pendiente _____________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:225: in test_c2_alerta_sin_clasificar_deja_la_fila_pendiente
+    assert any("SIN CLASIFICAR" in m for m in campo["motivos_revision"])
+E   assert False
+E    +  where False = any(<generator object test_c2_alerta_sin_clasificar_deja_la_fila_pendiente.<locals>.<genexpr> at 0x7fe094f593c0>)
+_________ test_c2_revision_informativa_no_bloquea_confirmacion_limpia __________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:234: in test_c2_revision_informativa_no_bloquea_confirmacion_limpia
+    assert consenso["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+______________ test_c2_items_legados_sin_motivo_bloquean_v15_9_3 _______________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:253: in test_c2_items_legados_sin_motivo_bloquean_v15_9_3
+    assert consenso["revision_no_clasificada"] is True
+E   assert False is True
+________ test_c2_confirmacion_manual_manda_sobre_alerta_sin_clasificar _________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:268: in test_c2_confirmacion_manual_manda_sobre_alerta_sin_clasificar
+    assert consenso["estado"] == "confirmado_manual"
+E   AssertionError: assert 'sin_consenso' == 'confirmado_manual'
+E     
+E     - confirmado_manual
+E     + sin_consenso
+________________ test_c5_comandos_mac_conservan_modo_ejecutable ________________
+pruebas/test_v15_9_2_correcciones_c1_c7.py:472: in test_c5_comandos_mac_conservan_modo_ejecutable
+    assert modo & 0o111, f"{nombre} perdió el bit ejecutable (modo {oct(modo)})"
+E   AssertionError: iniciar.command perdió el bit ejecutable (modo 0o644)
+E   assert (420 & 73)
+________________ test_crit02_revision_sin_motivo_no_se_publica _________________
+pruebas/test_v15_9_3_criticos.py:161: in test_crit02_revision_sin_motivo_no_se_publica
+    assert consenso["estado_consenso"] == "confirmado"  # respaldo numérico 3
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+________________ test_crit02_tres_de_4_limpio_sigue_confirmado _________________
+pruebas/test_v15_9_3_criticos.py:175: in test_crit02_tres_de_4_limpio_sigue_confirmado
+    assert consenso["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+______________ test_crit02_marca_informativa_explicita_no_bloquea ______________
+pruebas/test_v15_9_3_criticos.py:185: in test_crit02_marca_informativa_explicita_no_bloquea
+    assert consenso["requiere_revision"] is False
+E   assert True is False
+________________ test_crit02_confirmacion_humana_sigue_mandando ________________
+pruebas/test_v15_9_3_criticos.py:194: in test_crit02_confirmacion_humana_sigue_mandando
+    assert consenso["estado"] == "confirmado_manual"
+E   AssertionError: assert 'sin_consenso' == 'confirmado_manual'
+E     
+E     - confirmado_manual
+E     + sin_consenso
+__________ test_n4_tres_de_4_con_revision_obligatoria_queda_pendiente __________
+pruebas/test_v15_9_4_ampliacion.py:339: in test_n4_tres_de_4_con_revision_obligatoria_queda_pendiente
+    assert consenso["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+____________________ test_tres_de_cuatro_coinciden_confirma ____________________
+pruebas/test_v15_9_consenso_3_de_4.py:37: in test_tres_de_cuatro_coinciden_confirma
+    assert res["soporte"] == 3 and res["soporte_requerido"] == 3
+E   assert (2 == 3)
+____________ test_dos_de_cuatro_queda_discordancia_y_pide_revision _____________
+pruebas/test_v15_9_consenso_3_de_4.py:60: in test_dos_de_cuatro_queda_discordancia_y_pide_revision
+    assert res["soporte_requerido"] == 3
+E   assert 2 == 3
+________________ test_unico_cluster_sin_soporte_queda_propuesto ________________
+pruebas/test_v15_9_consenso_3_de_4.py:73: in test_unico_cluster_sin_soporte_queda_propuesto
+    assert res["soporte_requerido"] == 3
+E   assert 2 == 3
+___________ test_camaras_adicionales_raras_no_destruyen_el_consenso ____________
+pruebas/test_v15_9_consenso_3_de_4.py:84: in test_camaras_adicionales_raras_no_destruyen_el_consenso
+    assert res["soporte_requerido"] == 3
+E   assert 2 == 3
+_______________ test_camara_ausente_no_cambia_el_minimo_de_tres ________________
+pruebas/test_v15_9_consenso_3_de_4.py:96: in test_camara_ausente_no_cambia_el_minimo_de_tres
+    assert res["estado_consenso"] == "confirmado"  # 3 coinciden
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+________________ test_confirmacion_humana_conserva_la_decision _________________
+pruebas/test_v15_9_consenso_3_de_4.py:106: in test_confirmacion_humana_conserva_la_decision
+    assert res["estado"] == "confirmado_manual"
+E   AssertionError: assert 'sin_consenso' == 'confirmado_manual'
+E     
+E     - confirmado_manual
+E     + sin_consenso
+_____________ test_estados_sin_evento_sin_datos_y_evento_al_inicio _____________
+pruebas/test_v15_9_consenso_3_de_4.py:119: in test_estados_sin_evento_sin_datos_y_evento_al_inicio
+    assert res["estado_consenso"] == "sin_evento"
+E   AssertionError: assert 'propuesto' == 'sin_evento'
+E     
+E     - sin_evento
+E     + propuesto
+____________________ test_incidencias_de_video_se_reportan _____________________
+pruebas/test_v15_9_consenso_3_de_4.py:142: in test_incidencias_de_video_se_reportan
+    assert res["estado_consenso"] == "confirmado"
+E   AssertionError: assert 'propuesto' == 'confirmado'
+E     
+E     - confirmado
+E     + propuesto
+_________ test_deteccion_anterior_sin_respaldo_sigue_pidiendo_revision _________
+pruebas/test_v15_9_consenso_3_de_4.py:151: in test_deteccion_anterior_sin_respaldo_sigue_pidiendo_revision
+    assert res["camara_anterior_sin_respaldo"]["video"] == CAM["a"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: 'NoneType' object is not subscriptable
+______________ test_razones_evento_explica_dos_momentos_y_fuentes ______________
+pruebas/test_v15_9_detector_dos_momentos.py:19: in test_razones_evento_explica_dos_momentos_y_fuentes
+    assert r["frame_evento"] == 6
+E   assert 11 == 6
+___________________ test_hinchado_suave_tampoco_es_apertura ____________________
+pruebas/test_v15_9_detector_dos_momentos.py:80: in test_hinchado_suave_tampoco_es_apertura
+    assert r["estado"] == "sin_evento"
+E   AssertionError: assert 'candidato' == 'sin_evento'
+E     
+E     - sin_evento
+E     + candidato
+____________ test_version_de_algoritmo_y_dos_momentos_en_resultado _____________
+pruebas/test_v15_9_detector_dos_momentos.py:88: in test_version_de_algoritmo_y_dos_momentos_en_resultado
+    assert r["algoritmo_video"].startswith("v15.10.1-r13")
+E   AssertionError: assert False
+E    +  where False = <built-in method startswith of str object at 0x7fe095551ef0>('v15.10.1-r13')
+E    +    where <built-in method startswith of str object at 0x7fe095551ef0> = 'v16.0.19-tres-eventos-camaras-especificas'.startswith
+_______________ VideoAirbagV15Tests.test_consenso_tres_de_cuatro _______________
+pruebas/test_v15_video_airbag.py:56: in test_consenso_tres_de_cuatro
+    self.assertEqual(c["estado"], "primera_aparicion")
+E   AssertionError: 'sin_consenso' != 'primera_aparicion'
+E   - sin_consenso
+E   + primera_aparicion
+_________ VideoAirbagV15Tests.test_overlay_calibra_camaras_sin_overlay _________
+pruebas/test_v15_video_airbag.py:74: in test_overlay_calibra_camaras_sin_overlay
+    self.assertEqual(c["estado"], "primera_aparicion")
+E   AssertionError: 'sin_consenso' != 'primera_aparicion'
+E   - sin_consenso
+E   + primera_aparicion
+____________________________ test_v16_version_unica ____________________________
+pruebas/test_v16_identidad.py:9: in test_v16_version_unica
+    assert (ROOT / "VERSION.txt").read_text(encoding="utf-8").strip() == BUILD
+E   AssertionError: assert '16.0.20' == '16.0.2'
+E     
+E     - 16.0.2
+E     + 16.0.20
+E     ?       +
+=============================== warnings summary ===============================
+../../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+../../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED pruebas/test_ruptura_real.py::test_fisura_oscura_precede_a_tela_clara
+FAILED pruebas/test_ruptura_real.py::test_hinchado_suave_y_brillo_creciente_no_son_ruptura
+FAILED pruebas/test_ruptura_real.py::test_ruido_puntual_cercano_no_adelanta_fisura_real
+FAILED pruebas/test_ruptura_real.py::test_indicio_separado_por_cuadro_limpio_no_se_fusiona
+FAILED pruebas/test_ruptura_real.py::test_primer_pixel_persistente_mas_de_siete_frames_se_conserva
+FAILED pruebas/test_ruptura_real.py::test_pixel_10_crece_30_sin_arrastrar_pixel_caliente_anterior
+FAILED pruebas/test_ruptura_real.py::test_dos_camaras_automaticas_no_borran_revision_pendiente
+FAILED pruebas/test_ruptura_real.py::test_confirmacion_humana_prevalece_sobre_flags_automaticos
+FAILED pruebas/test_v1510_piloto.py::test_modificador_matriz_no_encubre_diferencias
+FAILED pruebas/test_v1510_piloto.py::test_benchmark_portable_windows_sin_resource
+FAILED pruebas/test_v1510_piloto.py::test_instalar_y_rollback_transaccional_en_repo_simulado
+FAILED pruebas/test_v15_10_1_r14_auditoria_preventiva.py::test_backend_publica_salud_y_persistencia_segura
+FAILED pruebas/test_v15_10_1_r14_auditoria_preventiva.py::test_frontend_cache_r14
+FAILED pruebas/test_v15_10_1_r158_endurecimiento.py::test_soak_identidad_por_defecto_version_aware
+FAILED pruebas/test_v15_10_1_r159_endurecimiento.py::test_soak_identidad_por_defecto_es_la_del_arbol
+FAILED pruebas/test_v15_10_1_r4_apertura_dependencias.py::test_consenso_automatico_3_camaras_recupera_color_sin_relajar_conflictos
+FAILED pruebas/test_v15_6_tiempo_video_estable.py::VideoV156TiempoEstableTests::test_consenso_autorrepara_items_antiguos
+FAILED pruebas/test_v15_7_1_identidad_cache_fps.py::test_analisis_corrige_rec_mal_leido_con_el_reloj
+FAILED pruebas/test_v15_7_bugs_prioritarios.py::FpsRealTests::test_sin_rec_en_ningun_video_no_inventa_1375_ms
+FAILED pruebas/test_v15_7_bugs_prioritarios.py::ConsensoPrimeraAparicionTests::test_deteccion_aislada_mas_temprana_pide_revision
+FAILED pruebas/test_v15_7_bugs_prioritarios.py::ConsensoPrimeraAparicionTests::test_nunca_negativo
+FAILED pruebas/test_v15_7_bugs_prioritarios.py::ConsensoPrimeraAparicionTests::test_scheibe_no_define_el_tiempo
+FAILED pruebas/test_v15_7_detector_apertura.py::DetectorAperturaV157Tests::test_discontinuidad_descarta_hinchado_incluso_sin_compensacion
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b1_propuesta_no_confirmada_nunca_es_valida
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b1_con_cuatro_camaras_el_mantenimiento_sigue_intacto
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b1_tres_coincidentes_limpio_si_publica
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b1_precedencia_manual_siempre_manda
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b2_causa_grave_no_se_borra_al_confirmar
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b2_overlay_dudoso_bloquea_publicacion
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b2_error_de_lectura_del_reloj_bloquea_publicacion
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b2_ausencia_de_reloj_no_bloquea_por_si_sola
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b2_roi_incierta_autoalineada_bloquea_publicacion
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b2_roi_confirmada_no_bloquea
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_b2_revision_manual_limpia_las_causas_de_esa_camara
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_compatibilidad_con_datos_de_cache_antiguos
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_e2e_propuesto_no_rellena_opening_time_ms
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_e2e_confirmado_si_rellena_y_colorea
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_e2e_causa_grave_deja_el_tiempo_pendiente_en_la_fila
+FAILED pruebas/test_v15_9_1_consenso_publicacion.py::test_e2e_sin_evento_previo_de_video_marca_faltante
+FAILED pruebas/test_v15_9_1_paridad_matriz.py::test_e2e_propuesto_y_causa_grave_quedan_grises_en_el_excel
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c1_migracion_reevalua_2_de_4_y_conserva_evidencia
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c1_migracion_preserva_confirmacion_manual_real
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c2_alerta_sin_clasificar_bloquea_el_consolidado
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c2_alerta_sin_clasificar_deja_la_fila_pendiente
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c2_revision_informativa_no_bloquea_confirmacion_limpia
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c2_items_legados_sin_motivo_bloquean_v15_9_3
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c2_confirmacion_manual_manda_sobre_alerta_sin_clasificar
+FAILED pruebas/test_v15_9_2_correcciones_c1_c7.py::test_c5_comandos_mac_conservan_modo_ejecutable
+FAILED pruebas/test_v15_9_3_criticos.py::test_crit02_revision_sin_motivo_no_se_publica
+FAILED pruebas/test_v15_9_3_criticos.py::test_crit02_tres_de_4_limpio_sigue_confirmado
+FAILED pruebas/test_v15_9_3_criticos.py::test_crit02_marca_informativa_explicita_no_bloquea
+FAILED pruebas/test_v15_9_3_criticos.py::test_crit02_confirmacion_humana_sigue_mandando
+FAILED pruebas/test_v15_9_4_ampliacion.py::test_n4_tres_de_4_con_revision_obligatoria_queda_pendiente
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_tres_de_cuatro_coinciden_confirma
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_dos_de_cuatro_queda_discordancia_y_pide_revision
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_unico_cluster_sin_soporte_queda_propuesto
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_camaras_adicionales_raras_no_destruyen_el_consenso
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_camara_ausente_no_cambia_el_minimo_de_tres
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_confirmacion_humana_conserva_la_decision
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_estados_sin_evento_sin_datos_y_evento_al_inicio
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_incidencias_de_video_se_reportan
+FAILED pruebas/test_v15_9_consenso_3_de_4.py::test_deteccion_anterior_sin_respaldo_sigue_pidiendo_revision
+FAILED pruebas/test_v15_9_detector_dos_momentos.py::test_razones_evento_explica_dos_momentos_y_fuentes
+FAILED pruebas/test_v15_9_detector_dos_momentos.py::test_hinchado_suave_tampoco_es_apertura
+FAILED pruebas/test_v15_9_detector_dos_momentos.py::test_version_de_algoritmo_y_dos_momentos_en_resultado
+FAILED pruebas/test_v15_video_airbag.py::VideoAirbagV15Tests::test_consenso_tres_de_cuatro
+FAILED pruebas/test_v15_video_airbag.py::VideoAirbagV15Tests::test_overlay_calibra_camaras_sin_overlay
+FAILED pruebas/test_v16_identidad.py::test_v16_version_unica - AssertionError...
+68 failed, 1109 passed, 54 skipped, 2 warnings in 180.55s (0:03:00)
