@@ -1,0 +1,19 @@
+versionV16_0_51.xlsx vs Book-10-Examples_CORREGIDO.xlsx · 200 celdas
+
+  coincide       188   (94.0 %)
+  hueco            1
+  discrepancia     1
+  sobra            0
+  sin dato        10
+
+  cerradas (coincide + sin dato) ... 198/200 = 99.0 %
+  techo si se resuelve todo lo pendiente ... 200/200 = 100 %
+
+HUECOS (la referencia tiene dato y el libro no):
+  232564  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+
+DISCREPANCIAS (los dos tienen dato y no coinciden):
+  222504  module_serial_number       '671 ZRZ0539983E' ≠ '671ZRZ0539983E' -> normalizar espacios (o no normalizar ninguno)
+
+SIN DATO: 10 celdas que la referencia marca `--`.
+  No son un hueco, pero conviene escribirlas igual en todas las filas: 222504, 222509, 222521, 222530, 232550, 232561, 232564, 232566, 252581, 252590

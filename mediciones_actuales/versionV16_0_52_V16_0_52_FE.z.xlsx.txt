@@ -1,0 +1,163 @@
+versionV16_0_52_V16_0_52_FE.z.xlsx vs Book-10-Examples_CORREGIDO.xlsx · 200 celdas
+
+  coincide        42   (21.0 %)
+  hueco          148
+  discrepancia     0
+  sobra            0
+  sin dato        10
+
+  cerradas (coincide + sin dato) ... 52/200 = 26.0 %
+  techo si se resuelve todo lo pendiente ... 200/200 = 100 %
+
+HUECOS (la referencia tiene dato y el libro no):
+  222504  week                       falta '22'                 -> ?
+  222504  test_reason                falta 'IT BMG'             -> ?
+  222504  test_date                  falta '2025-05-28'         -> ?
+  222504  test_place                 falta 'EDAG'               -> ?
+  222504  module_part_number         falta '2GJ.880.204.J'      -> ?
+  222504  module_serial_number       falta '671ZRZ0539983E'     -> normalizar espacios (o no normalizar ninguno)
+  222504  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  222504  engineering_level          falta '01S'                -> ?
+  222504  inflator_supplier          falta 'Autoliv'            -> ?
+  222504  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  222504  dashboard_serial_number    falta '052 3KVJ008R6E'     -> revisar la etiqueta en la cola de confirmación
+  222504  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  222504  dashboard_engineering_level falta '03S'                -> ?
+  222504  laser_opening              falta '3mm ¨C¨'            -> ?
+  222504  dashboard_supplier         falta 'FORVIA'             -> ?
+  222509  week                       falta '22'                 -> ?
+  222509  test_reason                falta 'IT BMG'             -> ?
+  222509  test_date                  falta '2025-05-28'         -> ?
+  222509  test_place                 falta 'EDAG'               -> ?
+  222509  module_part_number         falta '2GJ.880.204.J'      -> ?
+  222509  module_serial_number       falta '671 ZRZ0539999L'    -> normalizar espacios (o no normalizar ninguno)
+  222509  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  222509  engineering_level          falta '01S'                -> ?
+  222509  inflator_supplier          falta 'Autoliv'            -> ?
+  222509  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  222509  dashboard_serial_number    falta '052 3KVJ008R6J6'    -> revisar la etiqueta en la cola de confirmación
+  222509  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  222509  dashboard_engineering_level falta '03S'                -> ?
+  222509  laser_opening              falta '3mm ¨C¨'            -> ?
+  222509  dashboard_supplier         falta 'FORVIA'             -> ?
+  222521  week                       falta '22'                 -> ?
+  222521  test_reason                falta 'IT BMG'             -> ?
+  222521  test_date                  falta '2025-05-29'         -> ?
+  222521  test_place                 falta 'EDAG'               -> ?
+  222521  module_serial_number       falta '671 ZRZ0539962B'    -> normalizar espacios (o no normalizar ninguno)
+  222521  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  222521  engineering_level          falta '01S'                -> ?
+  222521  inflator_type              falta 'OGL'                -> ?
+  222521  inflator_supplier          falta 'Autoliv'            -> ?
+  222521  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  222521  dashboard_serial_number    falta '052 3KVJ008R69S'    -> revisar la etiqueta en la cola de confirmación
+  222521  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  222521  dashboard_engineering_level falta '03S'                -> ?
+  222521  laser_opening              falta '3mm ¨C¨'            -> ?
+  222521  dashboard_supplier         falta 'FORVIA'             -> ?
+  222530  week                       falta '22'                 -> ?
+  222530  test_reason                falta 'IT BMG'             -> ?
+  222530  test_date                  falta '2025-05-29'         -> ?
+  222530  test_place                 falta 'EDAG'               -> ?
+  222530  module_part_number         falta '2GJ.880.204.J'      -> ?
+  222530  module_serial_number       falta '671 ZRZ0539973D'    -> normalizar espacios (o no normalizar ninguno)
+  222530  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  222530  engineering_level          falta '69K'                -> ?
+  222530  inflator_supplier          falta 'Autoliv'            -> ?
+  222530  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  222530  dashboard_serial_number    falta '052 3KVJ008R6R'     -> revisar la etiqueta en la cola de confirmación
+  222530  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  222530  dashboard_engineering_level falta '03S'                -> ?
+  222530  laser_opening              falta '3mm ¨C¨'            -> ?
+  222530  dashboard_supplier         falta 'FORVIA'             -> ?
+  232550  week                       falta '23'                 -> ?
+  232550  test_reason                falta 'IT BMG'             -> ?
+  232550  test_date                  falta '2025-06-04'         -> ?
+  232550  test_place                 falta 'EDAG'               -> ?
+  232550  module_part_number         falta '2GJ.880.204.J'      -> ?
+  232550  module_serial_number       falta '671 ZRZ0539991D'    -> normalizar espacios (o no normalizar ninguno)
+  232550  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  232550  engineering_level          falta '01S'                -> ?
+  232550  inflator_supplier          falta 'Autoliv'            -> ?
+  232550  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  232550  dashboard_serial_number    falta '052 3KVJ008R56Z'    -> revisar la etiqueta en la cola de confirmación
+  232550  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  232550  dashboard_engineering_level falta '03S'                -> ?
+  232550  laser_opening              falta '3mm ¨C¨'            -> ?
+  232550  dashboard_supplier         falta 'FORVIA'             -> ?
+  232561  week                       falta '23'                 -> ?
+  232561  test_reason                falta 'IT BMG'             -> ?
+  232561  test_date                  falta '2025-06-05'         -> ?
+  232561  test_place                 falta 'EDAG'               -> ?
+  232561  module_serial_number       falta '671 ZRZ0539959H'    -> normalizar espacios (o no normalizar ninguno)
+  232561  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  232561  engineering_level          falta '66K'                -> ?
+  232561  inflator_type              falta 'OGL'                -> ?
+  232561  inflator_supplier          falta 'Autoliv'            -> ?
+  232561  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  232561  dashboard_serial_number    falta '052 3KVJ008R40S'    -> revisar la etiqueta en la cola de confirmación
+  232561  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  232561  dashboard_engineering_level falta '03S'                -> ?
+  232561  laser_opening              falta '3mm ¨C¨'            -> ?
+  232561  dashboard_supplier         falta 'FORVIA'             -> ?
+  232564  week                       falta '23'                 -> ?
+  232564  test_reason                falta 'IT BMG'             -> ?
+  232564  test_date                  falta '2025-06-05'         -> ?
+  232564  test_place                 falta 'EDAG'               -> ?
+  232564  module_serial_number       falta '671 ZRZ05399609'    -> normalizar espacios (o no normalizar ninguno)
+  232564  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  232564  engineering_level          falta '66K'                -> ?
+  232564  inflator_type              falta 'OGL'                -> ?
+  232564  inflator_supplier          falta 'Autoliv'            -> ?
+  232564  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  232564  dashboard_serial_number    falta '052 3KVJ008R4I3'    -> revisar la etiqueta en la cola de confirmación
+  232564  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  232564  dashboard_engineering_level falta '03S'                -> ?
+  232564  laser_opening              falta '3mm ¨C¨'            -> ?
+  232564  dashboard_supplier         falta 'FORVIA'             -> ?
+  232566  week                       falta '23'                 -> ?
+  232566  test_reason                falta 'IT BMG'             -> ?
+  232566  test_date                  falta '2025-06-05'         -> ?
+  232566  test_place                 falta 'EDAG'               -> ?
+  232566  module_serial_number       falta '671 ZRZ0539979J'    -> normalizar espacios (o no normalizar ninguno)
+  232566  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  232566  engineering_level          falta '69K'                -> ?
+  232566  inflator_supplier          falta 'Autoliv'            -> ?
+  232566  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  232566  dashboard_serial_number    falta '052 3KVJ008R6YI'    -> revisar la etiqueta en la cola de confirmación
+  232566  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  232566  dashboard_engineering_level falta '03S'                -> ?
+  232566  laser_opening              falta '3mm ¨C¨'            -> ?
+  232566  dashboard_supplier         falta 'FORVIA'             -> ?
+  252581  week                       falta '25'                 -> ?
+  252581  test_reason                falta 'IT BMG'             -> ?
+  252581  test_date                  falta '2025-06-19'         -> ?
+  252581  test_place                 falta 'EDAG'               -> ?
+  252581  module_part_number         falta '2GJ.880.204.J'      -> ?
+  252581  module_serial_number       falta '671 ZRZ0539985G'    -> normalizar espacios (o no normalizar ninguno)
+  252581  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  252581  engineering_level          falta '01S'                -> ?
+  252581  inflator_supplier          falta 'Autoliv'            -> ?
+  252581  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  252581  dashboard_serial_number    falta '052 3KVJ008R5D'     -> revisar la etiqueta en la cola de confirmación
+  252581  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  252581  dashboard_engineering_level falta '03S'                -> ?
+  252581  laser_opening              falta '3mm ¨C¨'            -> ?
+  252581  dashboard_supplier         falta 'FORVIA'             -> ?
+  252590  week                       falta '25'                 -> ?
+  252590  test_reason                falta 'IT BMG'             -> ?
+  252590  test_date                  falta '2025-06-19'         -> ?
+  252590  test_place                 falta 'EDAG'               -> ?
+  252590  module_serial_number       falta '671 ZRZ0540005Y'    -> normalizar espacios (o no normalizar ninguno)
+  252590  module_date                falta '2025-04-10'         -> normalizar el criterio de fecha del módulo (o no normalizar ninguna)
+  252590  engineering_level          falta '01S'                -> ?
+  252590  inflator_supplier          falta 'Autoliv'            -> ?
+  252590  dashboard_part_number      falta '2GJ.857.003.G'      -> A6 · autorizar el payload como fuente cuando el grabado no lee
+  252590  dashboard_serial_number    falta '052 3KVJ008R52V'    -> revisar la etiqueta en la cola de confirmación
+  252590  dashboard_date             falta '2025-05-17'         -> fotos dirigidas del sticker de fecha (hacen falta 2 lecturas iguales)
+  252590  dashboard_engineering_level falta '03S'                -> ?
+  252590  laser_opening              falta '3mm ¨C¨'            -> ?
+  252590  dashboard_supplier         falta 'FORVIA'             -> ?
+
+SIN DATO: 10 celdas que la referencia marca `--`.
+  No son un hueco, pero conviene escribirlas igual en todas las filas: 222504, 222509, 222521, 222530, 232550, 232561, 232564, 232566, 252581, 252590
